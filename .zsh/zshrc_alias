@@ -21,6 +21,12 @@ alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_
 ## Alias from RH root
 alias dmesg='dmesg|less'
 
+## Vagrant
+alias vup="vagrant up"
+alias vdown="vagrant halt"
+alias vssh="vagrant ssh"
+alias vsync="vagrant rsync-auto"
+
 ## Conditionnal alias 
 [ -f /usr/local/bin/service_web ] && alias service_web='sudo /usr/local/bin/service_web'
 [ -d /home/builder ] && alias builder='sudo /usr/local/bin/builder'
