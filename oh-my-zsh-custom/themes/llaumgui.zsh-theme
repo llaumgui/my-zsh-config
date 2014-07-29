@@ -15,7 +15,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[yellow]%})"
 
 
 ## Pseudo zlogin
-echo "${fg[${COLOR}]}$(uptime)"
+echo "${fg[${HOST_COLOR}]}$(uptime)"
 echo "Kernel: $(uname -r) ($(uname -v))${reset_color}"
 echo ""
 [ -f /usr/bin/fortune ] && [ -d /usr/share/games/fortune-fr ] && fortune /usr/share/games/fortune-fr/ && echo ""
