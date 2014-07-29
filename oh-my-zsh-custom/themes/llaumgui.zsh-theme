@@ -1,4 +1,6 @@
-HOST_COLOR=blue
+if [[ -z "$HOST_COLOR" ]]; then
+    HOST_COLOR=blue
+fi
 
 if [ ${UID} = "0" ]; then
 	PROMPT="%{$fg_bold[red]%}%n%{$reset_color%}@%{$fg[$HOST_COLOR]%}%m%{$reset_color%} %~%{$fg_bold[red]%}>%{$reset_color%} " 
