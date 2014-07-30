@@ -1,3 +1,4 @@
+# You can override HOST_COLOR in /etc/zshenv
 if [[ -z "$HOST_COLOR" ]]; then
     HOST_COLOR=blue
 fi
