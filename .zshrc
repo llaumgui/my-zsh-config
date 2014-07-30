@@ -8,9 +8,6 @@
 #   - Oh My Zsh                                                                #
 ################################################################################
 
-# Host color
-HOST_COLOR=blue
-
 # Path to your oh-my-zsh installation.
 export ZSH=/opt/robbyrussell/oh-my-zsh
 
