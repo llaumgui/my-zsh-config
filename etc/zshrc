@@ -61,11 +61,9 @@ ZSH_CUSTOM=/opt/llaumgui/my-zsh-config/oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-# You can override HOST_COLOR in /etc/zshenv
-if [[ -z "$HOST_COLOR" ]]; then
+# You can override plugins in /etc/zshenv
+if [[ -z "$plugins" ]]; then
     plugins=(colored-man colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
-else
-    plugins=($ZSH_PLUGINS_LIST)
 fi
 source $ZSH/oh-my-zsh.sh
 
