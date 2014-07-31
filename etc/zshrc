@@ -8,9 +8,9 @@
 #   - Oh My Zsh                                                                #
 ################################################################################
 
-# Create ~/.zsh
-if [ ! -d "~/.zsh" ]; then
-    mkdir ~/.zsh
+# Create ~/.zsh/cache
+if [ ! -d "$HOME/.zsh/cache" ]; then
+    mkdir -p $HOME/.zsh/cache
 fi
 
 # Path to your oh-my-zsh installation.
@@ -148,7 +148,7 @@ unsetopt list_beep
 ##################################################################### Completion
 ## Use cache
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' cache-path $HOME/.zsh/cache
 
 # If this option is set completions are shown only if the completions don't have
 # an unambiguous prefix or suffix that could be inserted in the command line. 
