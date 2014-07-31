@@ -8,6 +8,11 @@
 #   - Oh My Zsh                                                                #
 ################################################################################
 
+# Create ~/.zsh
+if [ ! -d "~/.zsh" ]; then
+    mkdir ~/.zsh
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=/opt/robbyrussell/oh-my-zsh
 
@@ -49,14 +54,19 @@ ENABLE_CORRECTION="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=/opt/llaumgui/oh-my-zsh-custom
+ZSH_CUSTOM=/opt/llaumgui/my-zsh-config/oh-my-zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bower colored-man colorize common-aliases composer cp git git-extras history history-substring-search node npm phing screen sudo symfony2 systemadmin systemd vagrant vim-interaction yum z)
 
+# You can override HOST_COLOR in /etc/zshenv
+if [[ -z "$HOST_COLOR" ]]; then
+    plugins=(colored-man colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
+else
+    plugins=($ZSH_PLUGINS_LIST)
+fi
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -164,4 +174,36 @@ zstyle ':completion:*:kill:*'   force-list always
 
 
 ########################################################################## Alias
-source $HOME/.zsh/zshrc_alias
+## Clean up unwanted system aliases and start from scratch.
+unhash -am '*'
+
+## Classic
+alias cd..='cd ..'
+alias df='df -h'
+alias la='ls -ah --color=tty'
+alias ll='ls -lh --color=tty'
+alias lla='ls -lah --color=tty'
+alias more='less'
+alias vi='vim'
+
+## Bad reflex correction
+alias q!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
+alias x!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
+
+## Misc
+alias yum='sudo yum' 
+alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '	
+
+## Alias from RH root
+alias dmesg='dmesg|less'
+
+## Vagrant
+alias vup="vagrant up"
+alias vdown="vagrant halt"
+alias vssh="vagrant ssh"
+alias vsync="vagrant rsync-auto"
+
+## Conditionnal alias 
+[ -f /usr/local/bin/service_web ] && alias service_web='sudo /usr/local/bin/service_web'
+[ -d /home/builder ] && alias builder='sudo /usr/local/bin/builder'
+[ -d /srv/web/public_html/ ] && hash -d www=/srv/web/public_html/
