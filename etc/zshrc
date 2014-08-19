@@ -13,6 +13,9 @@ if [ ! -d "$HOME/.zsh/cache" ]; then
     mkdir -p $HOME/.zsh/cache
 fi
 
+# Setup z
+_Z_DATA="$HOME/.zsh/z"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/opt/robbyrussell/oh-my-zsh
 
