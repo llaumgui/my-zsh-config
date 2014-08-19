@@ -172,9 +172,6 @@ zstyle ':completion:*:kill:*'   force-list always
 
 
 ########################################################################## Alias
-## Clean up unwanted system aliases and start from scratch.
-unhash -am '*'
-
 ## Classic
 alias cd..='cd ..'
 alias df='df -h'
