@@ -1,3 +1,4 @@
+#
 # Personal aliases.
 #
 
