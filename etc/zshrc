@@ -179,7 +179,6 @@ zstyle ':completion:*:kill:*'   force-list always
 alias df='df -h'
 alias lla='ls -lAh'
 alias more='less'
-alias vi='vim'
 
 ## Bad reflex correction
 alias q!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
