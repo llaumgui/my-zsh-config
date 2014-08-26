@@ -1,8 +1,8 @@
-# Override HOST_COLOR from llaumgui.zsh.theme
+# Override HOST_COLOR from llaumgui.zsh.theme and motd plugin
 ZSH_HOST_COLOR=blue
 
 # Override plugins list
 plugins=(bower colored-man colorize common-aliases composer cp git git-extras history history-substring-search node npm phing screen sudo symfony2 systemadmin systemd vagrant vim-interaction yum z)
 
-# Uncomment to disable motd from llaumgui.zsh.theme
-#ZSH_THEME_DISABLE_MOTD=true
+# Set argument to fortune in motd plugin
+ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"

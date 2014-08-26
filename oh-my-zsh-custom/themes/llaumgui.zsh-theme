@@ -28,11 +28,3 @@ fi
 # Prompts
 PROMPT="$ZSH_THEME_USERNAME@%{$fg[$ZSH_HOST_COLOR]%}%m%{$reset_color%} %~%{$fg[$ZSH_THEME_PATHCOLOR]%}>%{$reset_color%} "
 RPROMPT='$(git_prompt_info)'
-
-# Pseudo motd
-if [[ -z "$ZSH_THEME_DISABLE_MOTD" ]]; then
-    echo "${fg[${ZSH_HOST_COLOR}]}$(uptime)"
-    echo "Kernel: $(uname -r) ($(uname -v))${reset_color}"
-    echo ""
-    [ -f /usr/bin/fortune ] && [ -d /usr/share/games/fortune-fr ] && fortune /usr/share/games/fortune-fr/ && echo ""
-fi
