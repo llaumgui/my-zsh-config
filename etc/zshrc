@@ -174,7 +174,7 @@ zstyle ':completion:*:kill:*'   force-list always
 
 
 
-########################################################################## Alias
+######################################################################## Aliases
 ## Classic
 alias df='df -h'
 alias lla='ls -lAh'
@@ -187,10 +187,5 @@ alias x!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
 ## Misc
 alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '	
 
-## Alias from RH root
+## Aliases from RH root
 alias dmesg='dmesg|less'
-
-## Conditionnal alias 
-[ -f /usr/local/bin/service_web ] && alias service_web='sudo /usr/local/bin/service_web'
-[ -d /home/builder ] && alias builder='sudo /usr/local/bin/builder'
-[ -d /srv/web/public_html/ ] && hash -d www=/srv/web/public_html/
