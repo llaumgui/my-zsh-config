@@ -177,9 +177,7 @@ zstyle ':completion:*:kill:*'   force-list always
 ########################################################################## Alias
 ## Classic
 alias df='df -h'
-alias la='ls -ah --color=tty'
-alias ll='ls -lh --color=tty'
-alias lla='ls -lah --color=tty'
+alias lla='ls -lAh'
 alias more='less'
 alias vi='vim'
 
