@@ -19,6 +19,9 @@ _Z_DATA="$HOME/.zsh/z"
 # Path to your oh-my-zsh installation.
 export ZSH=/opt/robbyrussell/oh-my-zsh
 
+# Path to your my-zsh-config installation.
+export ZSH_MY_ZSH_CONFIG=/opt/llaumgui/my-zsh-config
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -57,7 +60,7 @@ ENABLE_CORRECTION="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=/opt/llaumgui/my-zsh-config/oh-my-zsh-custom
+ZSH_CUSTOM=$ZSH_MY_ZSH_CONFIG/oh-my-zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
