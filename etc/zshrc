@@ -172,8 +172,6 @@ zstyle ':completion:*:cp:*' ignore-line yes
 
 ## killall
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
-zstyle ':completion:*:*:kill:*' menu yes select
-zstyle ':completion:*:kill:*'   force-list always
 
 
 
