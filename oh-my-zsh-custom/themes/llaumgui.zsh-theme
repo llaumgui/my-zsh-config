@@ -1,3 +1,12 @@
+#
+# This file is part of My Zsh Config
+#
+# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr>
+# Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
+#
+# Distributed under the GNU GPL v2. For full terms see the file LICENSE.
+#
+
 # You can override ZSH_HOST_COLOR in /etc/zshenv
 if [[ -z "$ZSH_HOST_COLOR" ]]; then
     ZSH_HOST_COLOR=blue

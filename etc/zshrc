@@ -1,12 +1,11 @@
-################################################################################
-# My Zsh configuration                                                         #
-# by Kulakowski Guillaume <guillaume.kulakowski@fedoraproject.org>             #
-#                                                                              #
-# Version: 2014/07/28                                                          #
-#                                                                              #
-# Depend:                                                                      #
-#   - Oh My Zsh                                                                #
-################################################################################
+#
+# This file is part of My Zsh Config
+# 
+# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr> 
+# Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
+#
+# Distributed under the GNU GPL v2. For full terms see the file LICENSE.
+#
 
 # Create ~/.zsh/cache
 if [ ! -d "$HOME/.zsh/cache" ]; then
