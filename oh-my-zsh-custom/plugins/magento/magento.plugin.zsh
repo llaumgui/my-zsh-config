@@ -12,6 +12,7 @@
 #
 
 ## shell/cache.php
+## Using https://github.com/ticean/magento-shell-tools/blob/master/shell/cache.php
 _mgtcache_get_command_list () {
 	php -f shell/cache.php -- help | sed "1,/info/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
 }
