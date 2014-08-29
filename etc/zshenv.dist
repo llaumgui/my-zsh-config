@@ -15,3 +15,6 @@ plugins=(bower colored-man common-aliases composer cp git git-extras git-flow hi
 
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
+
+# Set theme
+#ZSH_THEME="llaumgui-simple"

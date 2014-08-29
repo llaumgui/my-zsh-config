@@ -25,7 +25,7 @@ export ZSH_MY_ZSH_CONFIG=/opt/llaumgui/my-zsh-config
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="llaumgui"
+ZSH_THEME="${ZSH_THEME:-llaumgui}"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
