@@ -189,18 +189,3 @@ alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_
 
 ## Aliases from RH root
 alias dmesg='dmesg|less'
-
-
-
-######################################################################### Upgrade
-function upgrade_my_zsh() {
-    upgrade_oh_my_zsh
-    printf '\033[0;34m%s\033[0m\n' "Upgrading My Custom Zsh"
-    cd "$ZSH_MY_ZSH_CONFIG"
-    if git pull --rebase --stat origin master
-    then
-      printf '\033[0;34m%s\033[0m\n' 'Hooray! My Custom Zsh has been updated and/or is at the current version.'
-    else
-      printf '\033[0;31m%s\033[0m\n' 'There was an error updating. Try again later?'
-    fi
-}
