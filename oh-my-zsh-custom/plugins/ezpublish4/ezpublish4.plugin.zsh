@@ -18,4 +18,4 @@ alias ez4checktpl='php bin/php/eztemplatecheck.php'
 alias ez4al='php bin/php/ezpgenerateautoloads.php'
 
 # Cron
-alias ez4rc='php runcronjobs.php.php'
+alias ez4rc='php runcronjobs.php'
