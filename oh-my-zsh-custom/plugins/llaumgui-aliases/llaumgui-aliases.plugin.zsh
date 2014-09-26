@@ -11,6 +11,9 @@
 # Personal aliases.
 #
 
+## Classics aliases
+alias vi='vim'
+
 ## Conditionnal aliases
 [ -f /usr/local/bin/service_web ] && alias service_web='sudo /usr/local/bin/service_web'
 [ -d /home/builder ] && alias builder='sudo /usr/local/bin/builder'
