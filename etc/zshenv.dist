@@ -11,7 +11,7 @@
 ZSH_HOST_COLOR=blue
 
 # Override plugins list
-plugins=(bower colored-man common-aliases composer cp git git-extras git-flow history history-substring-search node npm phing screen sudo symfony2 systemadmin systemd vagrant vim-interaction yum z)
+plugins=(bower capistrano colored-man common-aliases composer cp git git-extras git-flow history npm per-directory-history phing screen sudo symfony2 systemadmin systemd vagrant z)
 
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
