@@ -174,9 +174,16 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 
 
+######################################################################## Bindkey
+bindkey '^\e' insert-last-word # Like !$ with escape
+
+
+
 ######################################################################## Aliases
+
 ## Classic
 alias df='df -h'
+alias ll='ls -lh'
 alias lla='ls -lAh'
 alias more='less'
 alias diff='colordiff'
