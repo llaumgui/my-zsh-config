@@ -1,10 +1,10 @@
-## Putty keybinding
+# Putty keybinding
 
 Fix some [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)/[Kitty](http://www.9bis.net/kitty/) issues with ZSH:
 * Numpad.
 * Home / end.
 
-### Setup Putty
+## Setup Putty
 
 On Terminal / Keyboard set :
 

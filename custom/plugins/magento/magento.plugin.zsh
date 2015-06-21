@@ -14,7 +14,7 @@
 ## shell/cache.php
 ## Using https://github.com/ticean/magento-shell-tools/blob/master/shell/cache.php
 _mgtcache_get_command_list () {
-	php -f shell/cache.php -- help | sed "1,/info/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
+    php -f shell/cache.php -- help | sed "1,/info/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
 }
 
 _mgtcache () {
@@ -31,7 +31,7 @@ alias mgtcache='php shell/cache.php -- '
 
 ## shell/compiler.php
 _mgtcompiler_get_command_list () {
-	php -f shell/compiler.php -- help | sed "0,/Usage/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
+    php -f shell/compiler.php -- help | sed "0,/Usage/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
 }
 
 _mgtcompiler () {
@@ -47,7 +47,7 @@ alias mgtcompiler='php shell/compiler.php -- '
 
 ## shell/indexer.php
 _mgtindexer_get_command_list () {
-	php -f shell/indexer.php -- help | sed "0,/Usage/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
+    php -f shell/indexer.php -- help | sed "0,/Usage/d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
 }
 
 _mgtindexer () {
@@ -63,7 +63,7 @@ alias mgtindexer='php shell/indexer.php -- '
 
 ## shell/log.php
 _mgtlog_get_command_list () {
-	php -f shell/log.php -- help | sed "2,/ /d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
+    php -f shell/log.php -- help | sed "2,/ /d" | awk '/^  [a-z|\-\-]+/ { print $1 }'
 }
 
 _mgtlog () {

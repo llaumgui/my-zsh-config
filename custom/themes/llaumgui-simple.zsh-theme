@@ -14,10 +14,10 @@ fi
 
 # For root and user
 if [ ${UID} = "0" ]; then
-	ZSH_THEME_USERNAME="%{$fg_bold[red]%}%n%{$reset_color%}"
+    ZSH_THEME_USERNAME="%{$fg_bold[red]%}%n%{$reset_color%}"
     ZSH_THEME_PATHCOLOR=red
 else
-	ZSH_THEME_USERNAME="%n"
+    ZSH_THEME_USERNAME="%n"
     ZSH_THEME_PATHCOLOR=ZSH_HOST_COLOR
 fi
 

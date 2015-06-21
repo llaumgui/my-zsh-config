@@ -9,7 +9,7 @@
 
 upinfo ()
 {
-        echo -ne "\t ";uptime | awk /'up/ {print $3,$4,$5,$6,$7,$8,$9,$10}'
+    echo -ne "\t ";uptime | awk /'up/ {print $3,$4,$5,$6,$7,$8,$9,$10}'
 }
 
 # Pseudo zlogin on each login

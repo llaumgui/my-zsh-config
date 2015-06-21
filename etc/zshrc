@@ -1,7 +1,7 @@
 #
 # This file is part of My Zsh Config
-# 
-# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr> 
+#
+# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr>
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
@@ -31,7 +31,7 @@ ZSH_THEME="${ZSH_THEME:-llaumgui}"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -120,12 +120,12 @@ HISTFILE=~/.zsh/history
 
 # If a new command line being added to the history list duplicates an older one,
 # the older command is removed from the list (even if it is not the previous
-# event). 
+# event).
 setopt hist_ignore_all_dups
 
 # When searching for history entries in the line editor, do not display
 # duplicates of a line previously found, even if the duplicates are not
-# contiguous. 
+# contiguous.
 setopt hist_find_no_dups
 
 
@@ -134,7 +134,7 @@ setopt hist_find_no_dups
 # Enable correction
 setopt correctall
 
-# Do not query the user before executing rm * or rm path/*. 
+# Do not query the user before executing rm * or rm path/*.
 unsetopt rm_star_silent # Ask confirmation for 'rm *'
 
 ## Push
@@ -154,11 +154,11 @@ zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path $HOME/.zsh/cache
 
 # If this option is set completions are shown only if the completions don't have
-# an unambiguous prefix or suffix that could be inserted in the command line. 
+# an unambiguous prefix or suffix that could be inserted in the command line.
 unsetopt list_ambiguous
 
 # When the last character resulting from a completion is a slash and the
-# next character typed is a word delimiter, remove the slash. 
+# next character typed is a word delimiter, remove the slash.
 setopt auto_remove_slash
 
 ## cd
@@ -193,7 +193,7 @@ alias q!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
 alias x!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
 
 ## Misc
-alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '	
+alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '
 
 ## Aliases from RH root
 alias dmesg='dmesg|less'
