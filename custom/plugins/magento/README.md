@@ -1,13 +1,10 @@
 # Magento 1
-
 Plugin for [Magento](http://magento.com/), a Ecommerce Platform Solutions in PHP.
 
 ## Requirement
-
 * [Magento shell tools cache component](https://github.com/ticean/magento-shell-tools/blob/master/shell/cache.php) by Ticean Bennett.
 
 ## Alias & completion
-
 * __mgtcl__: Clear all caches.
 
 ```bash

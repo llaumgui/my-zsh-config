@@ -1,9 +1,7 @@
 # Vagrant aliases
-
-Plugin provided aliases for [Vagrant](http://www.vagrantup.com/).
+Plugin which provides aliases for [Vagrant](http://www.vagrantup.com/).
 
 ## Alias
-
 * __vup__: Start the box.
 
 ```bash
