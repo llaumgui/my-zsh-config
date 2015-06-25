@@ -36,5 +36,6 @@ Just edit */etc/zshenv* for global settings or edit your personal *~/.zshrc* fil
 
 By default auto update is disabled (*DISABLE_AUTO_UPDATE*), to enable it: just put this line in your personnal *~/.zshrc*:
 ```bash
+# Enable the bi-weekly auto-update checks.
 zsh -f $ZSH/tools/check_for_upgrade.sh
 ```
