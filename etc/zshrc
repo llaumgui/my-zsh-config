@@ -7,10 +7,11 @@
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
 #
 
-# Create ~/.zsh/cache
+# Create and use ~/.zsh/cache
 if [ ! -d "$HOME/.zsh/cache" ]; then
     mkdir -p $HOME/.zsh/cache
 fi
+ZSH_CACHE_DIR="$HOME/.zsh/cache/"
 
 # Setup z
 _Z_DATA="$HOME/.zsh/z"
@@ -151,7 +152,7 @@ unsetopt list_beep
 ##################################################################### Completion
 ## Use cache
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path $HOME/.zsh/cache
+zstyle ':completion:*' cache-path $ZSH_CACHE_DIR=
 
 # If this option is set completions are shown only if the completions don't have
 # an unambiguous prefix or suffix that could be inserted in the command line.
