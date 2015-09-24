@@ -7,17 +7,13 @@ My custom Oh My Zsh configuration.
 ```bash
 sudo mkdir /opt/robbyrussell
 cd /opt/robbyrussell
-sudo git clone git://github.com/robbyrussell/oh-my-zsh.git
-chown -R root:wheel oh-my-zsh
-chmod -R g+w oh-my-zsh
+sudo git clone https://github.com/robbyrussell/oh-my-zsh.git
 ```
 * Install my configuration:
 ```bash
 sudo mkdir /opt/llaumgui
 cd /opt/llaumgui
-sudo git clone git://github.com/llaumgui/my-zsh-config.git
-chown -R root:wheel oh-my-zsh
-chmod -R g+w oh-my-zsh
+sudo git clone https://github.com/llaumgui/my-zsh-config.git
 ```
 * Deploy configuration:
 ```bash
