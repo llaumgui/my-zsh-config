@@ -16,11 +16,11 @@ ZSH_CACHE_DIR="$HOME/.zsh/cache/"
 # Setup z
 _Z_DATA="$HOME/.zsh/z"
 
-# Path to your oh-my-zsh installation.
-export ZSH=/opt/robbyrussell/oh-my-zsh
-
 # Path to your my-zsh-config installation.
 export ZSH_MY_ZSH_CONFIG=/opt/llaumgui/my-zsh-config
+
+# Path to your oh-my-zsh installation.
+export ZSH=/opt/robbyrussell/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -30,6 +30,10 @@ ZSH_THEME="${ZSH_THEME:-llaumgui}"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
@@ -69,14 +73,15 @@ ZSH_CUSTOM=$ZSH_MY_ZSH_CONFIG/custom
 
 # You can override plugins in /etc/zshenv
 if [[ -z "$plugins" ]]; then
-    plugins=(colored-man colorize common-aliases cp history history-substring-search systemadmin systemd vim-interaction)
+    plugins=(git)
 fi
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
