@@ -15,6 +15,8 @@
 alias vi='vim'
 
 ## Conditionnal aliases
-[ -f /usr/local/bin/service_web ] && alias service_web='sudo /usr/local/bin/service_web'
 [ -d /home/builder ] && alias builder='sudo /usr/local/bin/builder'
 [ -d /srv/web/public_html/ ] && hash -d www=/srv/web/public_html/
+
+## Misc
+alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '
