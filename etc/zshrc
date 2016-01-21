@@ -180,11 +180,6 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 
 
-######################################################################## Bindkey
-bindkey '^\e' insert-last-word # Like !$ with escape
-
-
-
 ######################################################################## Aliases
 
 ## Classic
@@ -197,9 +192,6 @@ alias diff='colordiff'
 ## Bad reflex correction
 alias q!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
 alias x!='echo $fg[red]Je ne suis pas dans VIM !$reset_color'
-
-## Misc
-alias mksrpm='rpmbuild -bs --define "_source_filedigest_algorithm 0" --define "_binary_filedigest_algorithm 0" '
 
 ## Aliases from RH root
 alias dmesg='dmesg|less'
