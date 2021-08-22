@@ -10,7 +10,10 @@
 #
 # neovim aliases.
 #
-
 alias vi='nvim'
 alias vim='nvim'
 
+#
+# nvim by default.
+#
+export EDITOR='nvim'
