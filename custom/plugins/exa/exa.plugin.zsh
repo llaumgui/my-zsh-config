@@ -10,8 +10,6 @@
 #
 # exa aliases.
 #
-
 alias ls='exa --icons'
 alias ll='exa -l --icons'
 alias lla='exa -la  --icons'
-
