@@ -16,7 +16,7 @@ function upgrade_oh_my_zsh() {
     echo "\n\n"
     printf '\033[0;35m%s\033[0m\n' "Upgrading My Zsh Config"
     cd "$ZSH_MY_ZSH_CONFIG"
-    if git pull --rebase --stat origin master
+    if git pull --rebase --stat origin main
     then
         printf '\033[0;35m%s\033[0m\n' 'Hooray! My Zsh Config has been updated and/or is at the current version.'
     else
