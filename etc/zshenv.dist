@@ -1,7 +1,7 @@
 #
 # This file is part of My Zsh Config
 # 
-# Copyright (c) 2014 Guillaume Kulakowski <guillaume@kulakowski.fr> 
+# Copyright (c) 2014-2021 Guillaume Kulakowski <guillaume@kulakowski.fr> 
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
@@ -11,7 +11,7 @@
 ZSH_HOST_COLOR=blue
 
 # Override plugins list
-plugins=(colored-man-page colorize common-aliases composer cp git gitfast git-flow history mvn npm screen sudo symfony2 systemadmin systemd z)
+plugins=(colored-man common-aliases composer cp git history mvn npm screen sudo symfony2 systemadmin systemd z)
 
 # Set argument to fortune in motd plugin
 #ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
