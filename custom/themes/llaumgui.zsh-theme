@@ -1,7 +1,7 @@
 #
 # This file is part of My Zsh Config
 #
-# Copyright (c) 2014-2021 Guillaume Kulakowski <guillaume@kulakowski.fr>
+# Copyright (c) 2014-2022 Guillaume Kulakowski <guillaume@kulakowski.fr>
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
@@ -14,7 +14,7 @@ fi
 
 # Git info
 ZSH_THEME_GIT_COLOR=$fg[yellow]
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}[%{${ZSH_THEME_GIT_COLOR}%}" 
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}[%{${ZSH_THEME_GIT_COLOR}%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} ✘%{$reset_color%}]"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔%{$reset_color%}]"
