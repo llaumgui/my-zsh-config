@@ -11,5 +11,5 @@
 # exa aliases.
 #
 alias ls='exa --icons'
-alias ll='exa -l --icons'
-alias lla='exa -la  --icons'
+alias ll='exa -lg --icons'
+alias lla='exa -lga  --icons'
