@@ -11,7 +11,19 @@
 ZSH_HOST_COLOR=blue
 
 # Override plugins list
-plugins=(colored-man-pages common-aliases composer cp git history mvn npm screen sudo symfony2 systemadmin systemd z)
+plugins=(
+  aliases
+  bat
+  colored-man-pages
+  common-aliases
+  fancy-ctrl-z
+  git
+  history
+  screen
+  sudo
+  systemd
+  z
+)
 
 # Set theme
 #ZSH_THEME="llaumgui-simple"
