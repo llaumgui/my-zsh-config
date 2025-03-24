@@ -8,6 +8,6 @@
 #
 
 #
-# cat aliases.
+# diff aliases.
 #
-alias cat='bat'
+alias diff='colordiff'

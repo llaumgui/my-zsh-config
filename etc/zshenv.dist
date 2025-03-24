@@ -15,6 +15,7 @@ plugins=(
   aliases
   bat
   colored-man-pages
+  colordiff
   common-aliases
   fancy-ctrl-z
   git
