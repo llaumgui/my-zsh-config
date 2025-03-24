@@ -1,20 +1,17 @@
 #
 # This file is part of My Zsh Config
 #
-# Copyright (c) 2014-2022 Guillaume Kulakowski <guillaume@kulakowski.fr>
+# Copyright (c) 2014-2025 Guillaume Kulakowski <guillaume@kulakowski.fr>
 # Depend of Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh)
 #
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
 #
 
-# Override HOST_COLOR from llaumgui.zsh.theme and motd plugin
+# Override HOST_COLOR from llaumgui.zsh.theme
 ZSH_HOST_COLOR=blue
 
 # Override plugins list
 plugins=(colored-man-pages common-aliases composer cp git history mvn npm screen sudo symfony2 systemadmin systemd z)
-
-# Set argument to fortune in motd plugin
-#ZSH_FORTUNE_ARG="/usr/share/games/fortune-fr/"
 
 # Set theme
 #ZSH_THEME="llaumgui-simple"
