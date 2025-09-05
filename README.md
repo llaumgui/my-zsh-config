@@ -1,5 +1,8 @@
 # My Zsh Config
 
+[![Author][ico-bluesky]][link-bluesky]
+[![Software License][ico-license]](LICENSE)
+
 My custom Oh My Zsh configuration.
 
 ## Install
@@ -47,3 +50,8 @@ By default auto update is disabled (*DISABLE_AUTO_UPDATE*), to enable it: just p
 # Enable the bi-weekly auto-update checks.
 zsh -f $ZSH/tools/check_for_upgrade.sh
 ```
+
+[ico-bluesky]: https://img.shields.io/static/v1?label=Author&message=llaumgui&color=208bfe&logo=bluesky&style=flat-square
+[link-bluesky]: https://bsky.app/profile/llaumgui.kulakowski.fr
+[ico-version]: https://img.shields.io/docker/v/llaumgui/httpd?sort=semver&color=%2496ed&logo=docker&style=flat-square
+[ico-license]: https://img.shields.io/github/license/llaumgui/my-zsh-config?style=flat-square
