@@ -32,7 +32,7 @@ sudo cp /etc/zshrc /etc/zshrc.back
 sudo cat /opt/llaumgui/my-zsh-config/zshrc > /etc/zshrc
 mkdir ~/.zsh
 cat /opt/llaumgui/my-zsh-config/zsh_plugins.txt > ~/.zsh/plugins.txt
-cat /opt/llaumgui/my-zsh-config/p10k.zsh > ~/.p10k.zsh
+cat /opt/llaumgui/my-zsh-config/p10k.zsh > ~/.zsh/p10k.zsh
 ```
 
 * Enjoy !
@@ -40,6 +40,10 @@ cat /opt/llaumgui/my-zsh-config/p10k.zsh > ~/.p10k.zsh
 ## Setup
 
 Just edit */etc/zshenv* for global settings or edit your personal *~/.zshrc* file for a per user configuration.
+
+## Update
+
+The antidote plugin allow auto-update feature each `ZSH_ANTIDOTE_UPDATE` days.
 
 [ico-bluesky]: https://img.shields.io/static/v1?label=Author&message=llaumgui&color=208bfe&logo=bluesky&style=flat-square
 [link-bluesky]: https://bsky.app/profile/llaumgui.kulakowski.fr

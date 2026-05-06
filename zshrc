@@ -36,6 +36,15 @@ path+=("${ZDOTDIR:-$HOME}/.local/bin")
 path+=("${ZDOTDIR:-$HOME}/.npm/bin")
 
 
+################################################### Env variables before loading
+
+# OhMyZsh
+CASE_SENSITIVE=true
+HYPHEN_INSENSITIVE=false
+
+# zshuser/zsh-autosuggestions
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 ####################################################################### Antidote
 
 # Set the root name of the plugins files (.txt and .zsh) antidote will use.
@@ -85,7 +94,7 @@ setopt hist_find_no_dups
 
 ##################################################################### Completion
 
-## Use cache
+# Use cache
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path $ZSH_CACHE_DIR
 
@@ -97,42 +106,35 @@ unsetopt list_ambiguous
 # next character typed is a word delimiter, remove the slash.
 setopt auto_remove_slash
 
-## cd
+# cd
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
 
-## Prevent to propose a item already prpose
+# Prevent to propose a item already prpose
 zstyle ':completion:*:rm:*' ignore-line yes
 zstyle ':completion:*:mv:*' ignore-line yes
 zstyle ':completion:*:cp:*' ignore-line yes
 
-## killall
+# killall
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 
 ######################################################################## Options
 
-# Enable correction
-#setopt correctall
-
 # Do not query the user before executing rm * or rm path/*.
 unsetopt rm_star_silent # Ask confirmation for 'rm *'
 
-## Push
-setopt pushd_silent
-setopt pushd_to_home
-
-## No beep
+# No beep
 unsetopt beep
 unsetopt hist_beep
 unsetopt list_beep
 
 # zsh-users/zsh-autosuggestions
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 bindkey '^ ' autosuggest-accept
 
 ######################################################################## Aliases
 
-## Classic
+# Classic
 alias df='df -h'
 alias more='less'
 alias lla='ls -la'
+
