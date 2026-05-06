@@ -11,6 +11,11 @@
 # Antidote libs
 ZSH_ANTIDOTE='/opt/mattmc3/antidote/'
 
+# Create ZSH folder
+if [ ! -d "${ZDOTDIR:-$HOME}/.zsh" ]; then
+    mkdir -p "${ZDOTDIR:-$HOME}/.zsh"
+fi
+
 # Create and use ~/.cache/zsh
 ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 if [ ! -d "${ZSH_CACHE_DIR}" ]; then
@@ -21,7 +26,7 @@ fi
 _Z_DATA="${XDG_CACHE_HOME:-$HOME/.cache}/z"
 
 # History
-HISTFILE='~/.zsh/history'
+HISTFILE="${ZDOTDIR:-$HOME}/.zsh/history"
 
 # PATH
 path+=("${ZDOTDIR:-$HOME}/.local/bin")
