@@ -9,4 +9,6 @@
 # Aliases
 if command -v colordiff >/dev/null 2>&1; then
     alias diff='colordiff'
+else
+  echo '[zsh] colordiff not found, please install it from https://www.colordiff.org/'
 fi

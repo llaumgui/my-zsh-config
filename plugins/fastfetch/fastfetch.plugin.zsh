@@ -9,5 +9,6 @@
 if command -v fastfetch >/dev/null 2>&1 && [[ -z "$FASTFETCH_DONE" ]] && [[ $- == *i* ]]; then
     export FASTFETCH_DONE=1
     fastfetch
+else
+  echo '[zsh] fastfetch not found, please install it from https://github.com/fastfetch-cli/fastfetch'
 fi
-

@@ -13,4 +13,6 @@ if command -v nvim >/dev/null 2>&1; then
 
     # nvim by default.
     export EDITOR='nvim'
+else
+  echo '[zsh] neovim not found, please install it from https://neovim.io/'
 fi
