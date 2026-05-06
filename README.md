@@ -31,8 +31,8 @@ sudo git clone https://github.com/llaumgui/my-zsh-config.git
 sudo cp /etc/zshrc /etc/zshrc.back
 sudo cat /opt/llaumgui/my-zsh-config/zshrc > /etc/zshrc
 mkdir ~/.zsh
-cp /opt/llaumgui/my-zsh-config/zsh_plugins.txt > ~/.zsh/plugins
-cp /opt/llaumgui/my-zsh-config/p10k.zsh > ~/.p10k.zsh
+cat /opt/llaumgui/my-zsh-config/zsh_plugins.txt > ~/.zsh/plugins.txt
+cat /opt/llaumgui/my-zsh-config/p10k.zsh > ~/.p10k.zsh
 ```
 
 * Enjoy !

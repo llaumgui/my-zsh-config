@@ -28,6 +28,9 @@ _Z_DATA="${XDG_CACHE_HOME:-$HOME/.cache}/z"
 # History
 HISTFILE="${ZDOTDIR:-$HOME}/.zsh/history"
 
+# zcompletion
+ZSH_COMPDUMP="${ZDOTDIR:-$HOME}/.zsh/zcompdump-${ZSH_VERSION}"
+
 # PATH
 path+=("${ZDOTDIR:-$HOME}/.local/bin")
 path+=("${ZDOTDIR:-$HOME}/.npm/bin")
@@ -64,7 +67,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zsh/p10k.zsh ]] || source ~/.zsh/p10k.zsh
 
 
 ######################################################################## History

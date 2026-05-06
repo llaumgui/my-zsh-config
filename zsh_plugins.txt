@@ -10,10 +10,8 @@ ohmyzsh/ohmyzsh path:lib/key-bindings.zsh
 ohmyzsh/ohmyzsh path:lib/termsupport.zsh
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages         # load OMZ plugins
 ohmyzsh/ohmyzsh path:plugins/common-aliases
-ohmyzsh/ohmyzsh path:plugins/composer
 ohmyzsh/ohmyzsh path:plugins/dnf
 ohmyzsh/ohmyzsh path:plugins/docker
-ohmyzsh/ohmyzsh path:plugins/docker-compose
 ohmyzsh/ohmyzsh path:plugins/dotenv
 ohmyzsh/ohmyzsh path:plugins/eza
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
@@ -24,13 +22,13 @@ ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/pip
 ohmyzsh/ohmyzsh path:plugins/sudo
 ohmyzsh/ohmyzsh path:plugins/systemd
-ohmyzsh/ohmyzsh path:plugins/vscode
-ohmyzsh/ohmyzsh path:plugins/z
+ohmyzsh/ohmyzsh path:plugins/zoxide
 
 # My plugins
 llaumgui/my-zsh-config path:plugins/bat
 llaumgui/my-zsh-config path:plugins/colordiff
 llaumgui/my-zsh-config path:plugins/neovim
+llaumgui/my-zsh-config path:plugins/fastfetch
 
 # powerlevel10k
 romkatv/powerlevel10k
