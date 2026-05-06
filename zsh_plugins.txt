@@ -1,0 +1,40 @@
+# oh-my-zsh
+getantidote/use-omz                                    # handle OMZ dependencies
+#ohmyzsh/ohmyzsh path:lib                              # load OMZ's library
+ohmyzsh/ohmyzsh path:lib/clipboard.zsh
+ohmyzsh/ohmyzsh path:lib/compfix.zsh
+ohmyzsh/ohmyzsh path:lib/completion.zsh
+ohmyzsh/ohmyzsh path:lib/correction.zsh
+ohmyzsh/ohmyzsh path:lib/directories.zsh
+ohmyzsh/ohmyzsh path:lib/git.zsh
+ohmyzsh/ohmyzsh path:lib/grep.zsh
+ohmyzsh/ohmyzsh path:lib/history.zsh
+ohmyzsh/ohmyzsh path:lib/key-bindings.zsh
+ohmyzsh/ohmyzsh path:lib/misc.zsh
+ohmyzsh/ohmyzsh path:lib/nvm.zsh
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages         # load OMZ plugins
+ohmyzsh/ohmyzsh path:plugins/common-aliases
+ohmyzsh/ohmyzsh path:plugins/composer
+ohmyzsh/ohmyzsh path:plugins/dnf
+ohmyzsh/ohmyzsh path:plugins/docker
+ohmyzsh/ohmyzsh path:plugins/docker-compose
+ohmyzsh/ohmyzsh path:plugins/dotenv
+ohmyzsh/ohmyzsh path:plugins/eza
+ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/gitfast
+ohmyzsh/ohmyzsh path:plugins/history
+ohmyzsh/ohmyzsh path:plugins/npm
+ohmyzsh/ohmyzsh path:plugins/pip
+ohmyzsh/ohmyzsh path:plugins/sudo
+ohmyzsh/ohmyzsh path:plugins/systemd
+ohmyzsh/ohmyzsh path:plugins/vscode
+ohmyzsh/ohmyzsh path:plugins/z
+
+# My plugins
+llaumgui/my-zsh-config path:plugins/bat
+llaumgui/my-zsh-config path:plugins/colordiff
+llaumgui/my-zsh-config path:plugins/neovim
+
+# powerlevel10k
+romkatv/powerlevel10k
