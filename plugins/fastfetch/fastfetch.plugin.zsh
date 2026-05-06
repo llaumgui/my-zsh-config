@@ -6,11 +6,8 @@
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
 #
 
-if command -v nvim >/dev/null 2>&1; then
-    # neovim aliases.
-    alias vi='nvim'
-    alias vim='nvim'
-
-    # nvim by default.
-    export EDITOR='nvim'
+if command -v fastfetch >/dev/null 2>&1 && [[ -z "$FASTFETCH_DONE" ]] && [[ $- == *i* ]]; then
+    export FASTFETCH_DONE=1
+    fastfetch
 fi
+
