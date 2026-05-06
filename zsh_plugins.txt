@@ -1,17 +1,13 @@
 # oh-my-zsh
 getantidote/use-omz                                    # handle OMZ dependencies
 #ohmyzsh/ohmyzsh path:lib                              # load OMZ's library
-ohmyzsh/ohmyzsh path:lib/clipboard.zsh
 ohmyzsh/ohmyzsh path:lib/compfix.zsh
 ohmyzsh/ohmyzsh path:lib/completion.zsh
-ohmyzsh/ohmyzsh path:lib/correction.zsh
 ohmyzsh/ohmyzsh path:lib/directories.zsh
-ohmyzsh/ohmyzsh path:lib/git.zsh
 ohmyzsh/ohmyzsh path:lib/grep.zsh
 ohmyzsh/ohmyzsh path:lib/history.zsh
 ohmyzsh/ohmyzsh path:lib/key-bindings.zsh
-ohmyzsh/ohmyzsh path:lib/misc.zsh
-ohmyzsh/ohmyzsh path:lib/nvm.zsh
+ohmyzsh/ohmyzsh path:lib/termsupport.zsh
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages         # load OMZ plugins
 ohmyzsh/ohmyzsh path:plugins/common-aliases
 ohmyzsh/ohmyzsh path:plugins/composer
@@ -38,3 +34,7 @@ llaumgui/my-zsh-config path:plugins/neovim
 
 # powerlevel10k
 romkatv/powerlevel10k
+
+# Add fish-like features
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
