@@ -6,10 +6,6 @@
 # Distributed under the GNU GPL v2. For full terms see the file LICENSE.
 #
 
-# Aliases
-#alias antidote load="antidote load ${ZDOTDIR:-$HOME}/.zsh/plugins.txt"
-
-
 # Provides:
 #   antidote_update_if_needed
 #

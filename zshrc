@@ -41,6 +41,7 @@ path+=("${ZDOTDIR:-$HOME}/.npm/bin")
 # OhMyZsh
 CASE_SENSITIVE=true
 HYPHEN_INSENSITIVE=false
+ZSH_DISABLE_COMPFIX=true
 
 # zshuser/zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
@@ -130,6 +131,7 @@ unsetopt list_beep
 
 # zsh-users/zsh-autosuggestions
 bindkey '^ ' autosuggest-accept
+
 
 ######################################################################## Aliases
 

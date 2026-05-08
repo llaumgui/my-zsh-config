@@ -1,7 +1,13 @@
+#
+# This file is part of My Zsh Config
+#
+# Copyright (c) 2014-2026 Guillaume Kulakowski <guillaume@kulakowski.fr>
+#
+# Distributed under the GNU GPL v2. For full terms see the file LICENSE.
+#
+
 # oh-my-zsh
 getantidote/use-omz                                    # handle OMZ dependencies
-#ohmyzsh/ohmyzsh path:lib                              # load OMZ's library
-ohmyzsh/ohmyzsh path:lib/compfix.zsh
 ohmyzsh/ohmyzsh path:lib/completion.zsh
 ohmyzsh/ohmyzsh path:lib/directories.zsh
 ohmyzsh/ohmyzsh path:lib/grep.zsh
@@ -14,7 +20,6 @@ ohmyzsh/ohmyzsh path:plugins/docker
 ohmyzsh/ohmyzsh path:plugins/dotenv
 ohmyzsh/ohmyzsh path:plugins/eza
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
-ohmyzsh/ohmyzsh path:plugins/git
 ohmyzsh/ohmyzsh path:plugins/gitfast
 ohmyzsh/ohmyzsh path:plugins/history
 ohmyzsh/ohmyzsh path:plugins/npm
@@ -33,7 +38,8 @@ llaumgui/my-zsh-config path:plugins/fastfetch
 # powerlevel10k
 romkatv/powerlevel10k
 
-# Add fish-like features
-zsh-users/zsh-syntax-highlighting
+# Popular fish-like plugins
 zsh-users/zsh-autosuggestions
+zdharma-continuum/fast-syntax-highlighting kind:defer
 zsh-users/zsh-history-substring-search
+
